@@ -1,0 +1,13 @@
+# Docker
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# WordPress (optionnel)
+wordpress/wp-content/uploads/
