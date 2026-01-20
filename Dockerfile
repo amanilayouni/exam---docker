@@ -34,7 +34,7 @@ RUN wget https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-lang
 
 RUN chown -R www-data:www-data /var/www/html/
 
-# Bonus ENV autoinDEX (si tu veux le point)
+
 ENV AUTOINDEX=on
 
 COPY init_mysql.sh /tmp/init_mysql.sh

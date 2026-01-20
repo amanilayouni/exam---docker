@@ -1,9 +1,8 @@
-#!/bin/bash
+
 set -e
 
 service mariadb start || service mysql start
 
-# attendre que MariaDB réponde
 until mysqladmin ping --silent; do
   sleep 1
 done

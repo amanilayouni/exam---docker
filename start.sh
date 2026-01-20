@@ -4,7 +4,7 @@ set -e
 # Initialisation DB
 /tmp/init_mysql.sh
 
-# AutoinDEX via ENV (optionnel)
+# AutoinDEX via ENV
 if [ "$AUTOINDEX" = "off" ]; then
   sed -i 's/autoindex on;/autoindex off;/' /etc/nginx/sites-available/default
 else
@@ -14,5 +14,5 @@ fi
 # Démarrage PHP-FPM
 service php7.3-fpm start
 
-# Démarrage Nginx (foreground)
+# Démarrage Nginx
 nginx -g "daemon off;"
